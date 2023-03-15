@@ -20,6 +20,7 @@ const ToDo = ({toDo, markDone, setUpdateData, deleteTask }) => {
                             <div className="iconsWrap">
 
                             <span
+                                className="done-icon"
                                 onClick={ (e)=> markDone(task.id) }
                                 title="Completed / Not Completed">
                                 <FontAwesomeIcon icon={faCircleCheck}/>
@@ -27,6 +28,7 @@ const ToDo = ({toDo, markDone, setUpdateData, deleteTask }) => {
 
                                 {task.status ? null : (
                                     <span title="Edit"
+                                          className="edit-icon"
                                           onClick={ () => setUpdateData({
                                               id: task.id,
                                               title: task.title,
@@ -39,6 +41,7 @@ const ToDo = ({toDo, markDone, setUpdateData, deleteTask }) => {
 
 
                                 <span title="Delete"
+                                      className="delete-icon"
                                       onClick={()=> deleteTask(task.id)}
                                 >
                                 <FontAwesomeIcon icon={faTrashCan}/>

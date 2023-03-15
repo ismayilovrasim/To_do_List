@@ -15,7 +15,7 @@ const AddTaskForm = ({newTask, setNewTask, addTask}) => {
                 <div className="col-auto">
                     <button
                         onClick={addTask}
-                        className= "btn btn-lg btn-success"
+                        className= "btn btn-lg btn-custom"
                     >Add Task</button>
                 </div>
             </div>
